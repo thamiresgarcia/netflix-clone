@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;600&display=swap');
+
+:root{ /*Declaração de variáveis*/
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    background: var(--preto);
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #ffffff;
+}
+
+
+header .container{
+    display: flex; /*Para alinhar os elementos em tela*/
+    flex-direction: row; /*Propriedade padrão, mesmo que não seja declarada*/
+    align-items: center; /*Alinha os itens na vertical*/
+    justify-content: space-between; /*Alinhamento na horizontal; distância entre os elementos*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/outlander-capa.jpeg');
+    
+    height: 600px;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.filme-principal .titulo{
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 600;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #ffffff;
+
+    padding: 15px; /*espaço interno do elemento, apenas um valor: aplica-se às 4 posições.*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.botao:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 15px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box.filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-filmes{
+    margin-top: 0px; /*para alterar a margem, atribuir valor*/
+}

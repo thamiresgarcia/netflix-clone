@@ -1,0 +1,22 @@
+/*Formatações condicionais, dependendo do tamanho da tela*/
+@media screen and (max-width:700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+    }
+    
+    .filme-principal{
+        height: 80%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .descricao{
+        width:50%;
+    }
+    
+}
